@@ -12,6 +12,8 @@ require 'test/unit'
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'ukrb_search'
+require 'test_declarative'
+require 'turn'
 
 class Test::Unit::TestCase
 end

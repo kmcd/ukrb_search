@@ -10,3 +10,8 @@ group :development do
   gem "jeweler", "~> 1.6.0"
   gem "rcov", ">= 0"
 end
+
+group :test do
+  gem "turn"
+  gem "test_declarative"
+end
