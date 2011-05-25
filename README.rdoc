@@ -1,6 +1,16 @@
 = ukrb_search
 
-Description goes here.
+A wrapper for the github search page (https://github.com/search) in Ruby.
+
+For example, to search for all rubyists in the UK 
+(https://github.com/search?langOverride=Ruby&q=location%3AUK&start_value=1&type=Users)
+
+   s = Github::Search.new :type => :users, :lang => :ruby, :location => :UK
+   s.results
+   # => [ #<Rubyist @name='', @github_handle='' ]
+
+[optional] extend gem to search for known UK addresses
+[optional] extend gem to use other data sources (LinkedIn, Google, WorkingWithRails)
 
 == Contributing to ukrb_search
  
